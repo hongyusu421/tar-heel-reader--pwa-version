@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>
+   THR Find
+        </title>
+        <meta charset="utf-8"/>
+        <meta content="width=device-width, initial-scale=1" name="viewport"/>
+        <link href="site.css" rel="stylesheet"/>
+        <link href="find.css" rel="stylesheet"/>
+        <script src="find.js">
+        </script>
+    </head>
+    <body>
+        <details>
+            <summary title="menu">
+            </summary>
+            <nav>
+                <a href="favorites.html">
+                    Favorites
+                </a>
+                <a class="current" href="find.html">
+                    Find
+                </a>
+                <a href="settings.html">
+                    Settings
+                </a>
+            </nav>
+        </details>
+        <button id="heart">
+        </button>
+        <h1 class="title">
+            Tar Heel Reader
+        </h1>
+        <form action="" method="get">
+            <input id="search" name="search" placeholder="Enter text to search" title="Enter text to search" type="search" value=""/>
+            <select aria-label="Category" id="category" name="category">
+                <option value="">
+                    All Topics
+                </option>
+                <option value="ALPH">
+                    Alphabet
+                </option>
+                <option value="ANIM">
+                    Animals and Nature
+                </option>
+                <option value="ARTM">
+                    Art and Music
+                </option>
+                <option value="BIOG">
+                    Biographies
+                </option>
+                <option value="FAIR">
+                    Fairy and Folk Tales
+                </option>
+                <option value="FICT">
+                    Fiction
+                </option>
+                <option value="FOOD">
+                    Foods
+                </option>
+                <option value="HEAL">
+                    Health
+                </option>
+                <option value="HIST">
+                    History
+                </option>
+                <option value="HOLI">
+                    Holidays
+                </option>
+                <option value="MATH">
+                    Math and Science
+                </option>
+                <option value="NURS">
+                    Nursery Rhymes
+                </option>
+                <option value="PEOP">
+                    People and Places
+                </option>
+                <option value="POET">
+                    Poetry
+                </option>
+                <option value="RECR">
+                    Recreation and Leisure
+                </option>
+                <option value="SPOR">
+                    Sports
+                </option>
+            </select>
+            <select aria-label="Reviewed" id="reviewed" name="reviewed">
+                <option value="R">
+                    Reviewed only
+                </option>
+                <option value="">
+                    Include unreviewed
+                </option>
+            </select>
+            <select aria-label="Audience" id="audience" name="audience">
+                <option value="E">
+                    Rated E/Everybody
+                </option>
+                <option value="C">
+                    Rated C/Caution
+                </option>
+                <option value="">
+                    Any rating
+                </option>
+            </select>
+            <input id="page" name="page" type="hidden" value="1"/>
+            <input type="submit" value="Search"/>
+        </form>
+        <ul id="list">
+        </ul>
+        <a class="back" id="back">
+            Back
+        </a>
+        <a class="next" id="next">
+            Next
+        </a>
+    </body>
+</html>

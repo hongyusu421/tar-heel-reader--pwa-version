@@ -1,0 +1,25 @@
+@import url("site.css");
+
+body {
+  margin: 1em;
+}
+
+input,
+select,
+button {
+  font-size: 1em;
+  margin-top: 0.5em;
+}
+
+label {
+  display: block;
+}
+
+input {
+  width: 2em;
+}
+
+div#controls {
+  width: 25em;
+  margin: 0 auto;
+}

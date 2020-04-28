@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>THR Find</title>
+    ${include('head.mako', sw=1, css='find', js='find') }
+  </head>
+  <body>
+    ${include('menu.mako', current='find')}
+    <button id="heart"></button>
+    <h1 class="title">Tar Heel Reader</h1>
+
+    <form action="" method="get">
+      <input
+        type="search"
+        value=""
+        id="search"
+        name="search"
+        placeholder="Enter text to search"
+        title="Enter text to search"
+      />
+      <select id="category" name="category" aria-label="Category">
+        <option value="">All Topics</option>
+        <option value="ALPH">Alphabet</option>
+        <option value="ANIM">Animals and Nature</option>
+        <option value="ARTM">Art and Music</option>
+        <option value="BIOG">Biographies</option>
+        <option value="FAIR">Fairy and Folk Tales</option>
+        <option value="FICT">Fiction</option>
+        <option value="FOOD">Foods</option>
+        <option value="HEAL">Health</option>
+        <option value="HIST">History</option>
+        <option value="HOLI">Holidays</option>
+        <option value="MATH">Math and Science</option>
+        <option value="NURS">Nursery Rhymes</option>
+        <option value="PEOP">People and Places</option>
+        <option value="POET">Poetry</option>
+        <option value="RECR">Recreation and Leisure</option>
+        <option value="SPOR">Sports</option>
+      </select>
+      <select id="reviewed" name="reviewed" aria-label="Reviewed">
+        <option value="R">Reviewed only</option>
+        <option value="">Include unreviewed</option>
+      </select>
+      <select id="audience" name="audience" aria-label="Audience">
+        <option value="E">Rated E/Everybody</option>
+        <option value="C">Rated C/Caution</option>
+        <option value="">Any rating</option>
+      </select>
+      <input type="hidden" value="1" id="page" name="page" />
+      <input type="submit" value="Search" />
+    </form>
+
+    <ul id="list"></ul>
+    <a id="back" class="back">Back</a>
+    <a id="next" class="next">Next</a>
+  </body>
+</html>
