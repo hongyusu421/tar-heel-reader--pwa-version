@@ -1,6 +1,6 @@
 
 ### Instructions 
-This is the PWA version of Dr. BISHOP'S static tar heel reader which could also be found on github.
+This is the PWA version of Dr. Bishop's static tar heel reader which could also be found on github.
 
 Instruction of running the code:
 1. download
